@@ -1,3 +1,21 @@
+/*
+SELETORES
+1. Seletor de  Tag/Tipo
+2. Seletor de Id
+3. Seletor de Classe
+4. Seletor Universal
+5. Seletor de Atributo
+    
+        a[title] {
+          color: red;
+        }
+
+        a[title="Netflix"] {
+          color: blue;
+        }
+
+*/
+
 h1 {
   background-color: blue;
   color: white;
@@ -9,4 +27,13 @@ h2 {
 
 h3 {
   color: #252525;
+}
+
+a[title] {
+  color: red;
+}
+
+/*[atributo=value]*/
+a[title="Netflix"] {
+  color: blue;
 }

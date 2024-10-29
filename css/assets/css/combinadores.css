@@ -1,0 +1,83 @@
+.texto,
+h1,
+#link-referencia {
+  color: red;
+}
+
+/*todos os ID que comece com a palavra BOTAO*/
+ h1, [id^="botao"] {
+  background-color: rgb(219, 181, 255);
+}
+
+p.texto {
+  color: blueviolet;
+}
+
+/*
+Combinadores: qual tipo de relação entre 2 seletores.
+
+1. Combinador descendente (espaço)
+2. Combinador filho (>)
+3. Combinado irmão adjacente (+)
+4. Combinador irmão em geral (~)
+
+[SELETOR] [COMBINADOR] [SELETOR]
+
+*/
+
+li {
+  color: red;
+}
+
+li li {
+  color: green;
+}
+
+#lista-01 li {
+  background-color: lightblue;
+}
+
+
+ .fundo-verde li {
+  background-color: lightgreen;
+ }
+
+ .fundo-azul li {
+  background-color: lightblue;
+ }
+
+ li {
+  color: red;
+ }
+
+ .fundo-verde #sublista-01 li {
+  color: black;
+ }
+
+ .fundo-verde > p {
+  background-color: lightcoral;
+ }
+
+ .fundo-azul > p {
+  background-color: lightsteelblue;
+ }
+
+ div + p {
+  color: tomato;
+ }
+
+ .fundo-verde + p {
+  background-color: aqua;
+ }
+
+.fundo-verde ~ p {
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: bold;
+  color: aqua;
+  background-color: black;
+ }
+
+ .fundo-roxo p + p {
+  background-color: lightpink;
+ }
